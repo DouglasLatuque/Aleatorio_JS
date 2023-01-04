@@ -1,0 +1,111 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	<meta charset="UTF-8"/>
+	<title>aulas de js</title>
+	<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+	<header>
+		<div class="cabecalho"> 
+			<div class="inter">
+				<div class="shadowh1">
+					<h1 id="h1"> Página de criação de equipes </h1>
+					<h1 id="hcopia"> Página de criação de equipes </h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- PARTE 3 (mensagem de aviso) -->
+	<div class="mensagemMae"> 
+		<div class="mensagem">
+			<div class="mensagem1">
+				<p class="p"> Se você embaralhar, não poderá remover mais nomes. </p>
+				<p class="p"> Deseja mesmo embaralhar ? </p>
+			</div>
+			<div class="mensagem2">
+				<div class="sombraPT2 sombrasimnao">
+					<button id="newname" class="inicio2" onclick="simEmbaralhar()"> SIM </button>
+				</div>
+				<div class="sombraPT2 sombrasimnao">
+					<button id="newname" class="inicio2" onclick="naoEmbaralhar()"> NÃO </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRIMEIRA PAGINA -->
+	<div class="container inicio">
+		<div class="content inicio">
+			<h2 class="inicio"> Para começarmos, diga a quantidade de pessoas por equipe </h2>
+			<div class="inicio botoes">
+				<div class="sombra">
+				<input type="number" id="firstinput" autofocus="autofocus" class="inicio" onkeyup="comecando(event)" placeholder="ex.:3" required />
+				</div>
+				<div class="sombra">
+				<button class="inicio" onclick="validar()"> Iniciar </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FIM DA 1 PAGINA - INICIO DA 2 PAGINA -->
+	<div class="container part2">
+		<div class="content part2">
+			<h2 class="part2 parte22" > Agora coloque o nome de todos os participantes </h2>
+			<div class="inputpt2">
+				<input type="text" id="nome" class="part2" placeholder="digite os nomes aqui" onkeyup="addtexto(event)"/>
+			</div>
+
+			<div class="part2 parte22">
+				<div class="sombraPT2">
+					<button id="newname" class="part2 parte22  inicio2" onclick="add()"> Adicionar (enter)</button>
+				</div>
+				<div class="sombraPT2" id="remover">
+					<button class="part2 parte22 inicio2" onclick="remover()"> Remover </button>
+				</div>
+				<div class="sombraPT2">
+					<button id="embaralhar" class="part2 parte22 inicio2" onclick="embaralho()"> Embaralhar </button>
+				</div>
+				<div class="sombraPT2"  id="recomecar" style="display:none">
+					<button class="part2 parte22 inicio2" onclick="refresh()"> Recomeçar ! </button>
+				</div>	
+			</div>
+
+			<div class="tabela" > 
+				<table class="part2 parte22"> 
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+	<footer>
+		<div class="rodape"> 
+			<div class="inter"> 
+				<p> Created by: Douglas Latuque </p>
+				<div class="imagens">
+					<p> Contatos:</p>
+					<a href="https://br.linkedin.com/in/douglas-latuque-3a0844254" target="_blank" title="ir para linkedin ?"><img src="imagens/linkedin.png"/></a>
+					<a href="https://www.instagram.com/douglas_latuque/" target="_blank" title="ir para instagram ?"><img src="imagens/instagram.png"/></a>
+					<a href="https://api.whatsapp.com/send?phone=5532991207701" target="_blank" title="ir para whatsapp ?"><img src="imagens/wpp.png"/></a>	
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="scrollbutton" onclick="back()">↑</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
