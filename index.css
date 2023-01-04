@@ -193,7 +193,11 @@ button.inicio:hover, #firstinput:hover {
     color:rgb(255 255 255);
     background:rgb(36, 128, 214);
     box-shadow:0px 4px 0px 0px rgba(18, 76, 131, 0.8);
-    animation: balancar 2s linear infinite;
+    animation: balancar 2s linear infinite;    
+}
+
+#firstinput:focus::placeholder {
+    color: rgb(255,255,255);
 }
 
 
@@ -274,6 +278,17 @@ div.parte22 {
 
 #nome:hover::placeholder {
     color:rgb(255,255,255);
+}
+
+#nome:focus {
+    color:rgb(255 255 255);
+    background:rgb(36, 128, 214);
+    box-shadow:0px 4px 0px 0px rgba(18, 76, 131, 0.8);
+    animation: balancar 2s linear infinite; 
+}
+
+#nome:focus::placeholder {
+    color: rgb(255,255,255);
 }
 
 .sombraPT2:hover, .inputpt2:hover {

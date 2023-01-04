@@ -13,19 +13,6 @@ function comecando(e) {
   };
 };
 
-// function infiniteAnimation () {
-//   let input = document.querySelectorAll('input');
-//   for (i in input) {
-//     input[i].classList.add('infiniteAnimation');
-//   }
-// }
-// function stopAnimation () {
-//   let input = document.querySelectorAll('input');
-//   for (i in input) {
-//     input[i].classList.remove('infiniteAnimation');
-//   }
-// }
-
 function validar () {
   let tropinha = document.querySelector('#firstinput').value;
   if (tropinha == '') {
@@ -251,6 +238,4 @@ function back (){
 
 
 
-/*
-ao selecionar a caixa de texto, ela ficar infinito com a animação, e caso tirar o foco, volta ao normal o site
-*/
+
