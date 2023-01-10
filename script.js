@@ -173,6 +173,7 @@ function embaralho() {
   let pergunta = document.querySelector('.mensagemMae');
 
   if (pergunta.hasAttribute('style') == false){
+    window.scrollTo({top:0, left:0, behavior: 'smooth'});
     pergunta.setAttribute('style','display:flex;');
     return;
   } else {
