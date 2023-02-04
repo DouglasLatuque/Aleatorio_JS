@@ -15,8 +15,12 @@
 ::-webkit-scrollbar-thumb{
     height: 5px;
     background-color:rgba(18, 76, 131, 0.8);
-
   }
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
 
 
 .part1 {
